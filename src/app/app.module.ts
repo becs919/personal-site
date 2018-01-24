@@ -9,7 +9,10 @@ import {
   MatMenuModule,
   MatToolbarModule,
   MatIconModule,
-  MatCardModule
+  MatCardModule,
+  MatListModule,
+  MatTabsModule,
+  MatSidenavModule
 } from '@angular/material';
 
 @NgModule({
@@ -23,7 +26,10 @@ import {
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule,
+    MatTabsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -32,7 +38,10 @@ import {
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule,
+    MatTabsModule,
+    MatSidenavModule
   ]
 })
 export class AppModule { }
