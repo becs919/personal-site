@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -14,14 +14,23 @@ import {
   MatTabsModule,
   MatSidenavModule
 } from '@angular/material';
+import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ResumeComponent } from './resume/resume.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactComponent,
+    NotFoundComponent, 
+    PortfolioComponent, 
+    ResumeComponent
   ],
   imports: [
     BrowserModule, 
-    NoopAnimationsModule,
+    BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
     MatToolbarModule,
@@ -29,7 +38,8 @@ import {
     MatCardModule,
     MatListModule,
     MatTabsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
